@@ -1,0 +1,18 @@
+server:
+  port: 8989
+  context-path: /boot
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: kuson
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/kuson
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+mybatis:
+  type-aliases-package: com.kuson.springboot.entity
+  mapper-locations: com/kuson/springboot/dao/*Dao.xml
+
